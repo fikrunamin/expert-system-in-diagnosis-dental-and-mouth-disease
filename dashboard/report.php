@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once '../config.php';
 require_once('template/header.php');
 
@@ -15,11 +15,11 @@ $data['report'] = $stmt->fetch(PDO::FETCH_ASSOC);
 <div id="report" class="animated fadeInDown text-left">
 	<h4>Patient Data</h4>
 	<ul class="list-group list-group-flush mb-5">
-		<li class="list-group-item"><span class="font-weight-bold">Name:</span> <?=  $data['report']['fullname']?></li>
-		<li class="list-group-item"><span class="font-weight-bold">Email address</span>: <?=  $data['report']['email_address']?></li>
-		<li class="list-group-item"><span class="font-weight-bold">Phone Number</span>: (+60) <?=  $data['report']['phone_number']?></li>
-		<li class="list-group-item"><span class="font-weight-bold">Age</span>: <?=  $data['report']['age']?></li>
-		<li class="list-group-item"><span class="font-weight-bold">Job</span>: <?=  $data['report']['job']?></li>
+		<li class="list-group-item"><span class="font-weight-bold">Name:</span> <?= $data['report']['fullname'] ?></li>
+		<li class="list-group-item"><span class="font-weight-bold">Email address</span>: <?= $data['report']['email_address'] ?></li>
+		<li class="list-group-item"><span class="font-weight-bold">Phone Number</span>: (+60) <?= $data['report']['phone_number'] ?></li>
+		<li class="list-group-item"><span class="font-weight-bold">Age</span>: <?= $data['report']['age'] ?></li>
+		<li class="list-group-item"><span class="font-weight-bold">Job</span>: <?= $data['report']['job'] ?></li>
 	</ul>
 
 	<h4>Disease Analysis</h4>
@@ -29,19 +29,23 @@ $data['report'] = $stmt->fetch(PDO::FETCH_ASSOC);
 			<span class="font-weight-bold">Symptoms</span>:
 			<div class="col-9">
 				<?= $data['report']['symptoms'] ?>
-			 </div>
+			</div>
 		</li>
 		<li class="list-group-item">
-			<span class="font-weight-bold">Definition</span>: 
+			<span class="font-weight-bold">Definition</span>:
 			<div class="col"><?= $data['report']['definitions'] ?></div>
 		</li>
 		<li class="list-group-item">
-			<span class="font-weight-bold">Treatment</span>: 
+			<span class="font-weight-bold">Treatment</span>:
 			<div class="col"><?= $data['report']['treatments'] ?></div>
 		</li>
 	</ul>
-	<a href="/KBS/4admin" class="btn btn-md btn-outline-secondary">Back to dashboard</a>
+	<?php if ($_SESSION['login']['role'] != "user") : ?>
+		<a href="/KBS/4admin" class="btn btn-md btn-outline-secondary">Back to dashboard</a>
+	<?php else : ?>
+		<a href="/KBS/" class="btn btn-md btn-outline-secondary">Back to dashboard</a>
+	<?php endif; ?>
 	<button class="btn btn-md btn-primary mb-5 mt-5" onclick="window.print()">Print the report</button>
 </div>
 
-<?php require_once('template/footer.php');?>
+<?php require_once('template/footer.php'); ?>
