@@ -1,0 +1,105 @@
+$s1 = "It’s hard to chew";
+$s2 = "Swelling  or inflammation  of the gums";
+$s3 = "Shaky Teeth";
+$s4 = "Swelling of the jaw";
+$s5 = "Fever";
+$s6 = "Swollen lymph nodes around jaw or neck";
+$s7 = "Bad Breath";
+$s8 = "Pain or tenderness around the gums";
+$s9 = "Severe pain for several days after tooth extraction";
+$s10 = "Bones seen in socket";
+$s11 = "Teeth feel painful and sensitive";
+$s12 = "Eroded tooth";
+$s13 = "Headache";
+$s14 = "Insomnia or feeling restless";
+$s15 = "The sound of teeth crunching during sleep";
+$s16 = "Gums bleed easily";
+$s17 = "The shape of the gum is round";
+$s18 = "The consistency of the gums becomes soft";
+$s19 = "Gum or suppurating teeth";
+$s20 = "Tooth aches or throbbing";
+$s21 = "Redness on the corners of the mouth";
+$s22 = "The corner of the mouth feel painful";
+$s23 = "scaly mouth corners";
+$s24 = "Ulcer ( wound in the corner of the mouth)";
+$s25 = "Dentin Seen";
+$s26 = "Cavity";
+$s27 = "Infected pulp/inflammation of the pulp";
+$s28 = "Throbbing pain without stimulation";
+$s29 = "White spots on teeth";
+$s30 = "White patches on tongue";
+$s31 = "White patches on the oral cavity";
+$s32 = "Plaque deposits ";
+$s33 = "There is Tartar";
+$s34 = "Tooth decay ";
+$s35 = "Pulp is numb";
+$s36 = "The pulp chamber is open";
+$s37 = "Red gum";
+
+$d1 = "Periodontal abscess";
+$d2 = "Peripical Abscess";
+$d3 = "Alveolar Osteitis";
+$d4 = "dental abrasion";
+$d5 = "bruxism";
+$d6 = "Gingivitis";
+$d7 = "infected teeth";
+$d8 = "pain at the rear teeth";
+$d9 = "Angular Ceilitis";
+$d10 = "Caries Media";
+$d11 = "Caries profunda";
+$d12 = "Caries superficial";
+$d13 = "Candidiasis";
+$d14 = "Periodontitis";
+
+$t1 = "prescription of antibiotics";
+$t2 = "prescription of antibiotics";
+$t3 = "prescription of antibiotics and bandage the wound ";
+$t4 = "apply dental flourine, dental fillings and using a soft toothbrush";
+$t5 = "use night guard when sleeping and practice better body posture";
+$t6 = "gargle with mouthwash, prescription of vitamin c and drinking high amounts of water.";
+$t7 = "prescription of antibiotics";
+$t8 = "removal of rear teeth";
+$t9 = "prescription of antifungal medicine together with drinking high amounts of water.";
+$t10 = "Dental fillings";
+
+1. Is it hard to chew?
+2. Is there swelling or inflammation  of the gums?
+3. Do you have shaky teeth?
+4. Is there swelling of the jaw?
+5. Do you have fever?
+6. Is there swollen lymph nodes around jaw or neck ?
+7. Is there bad breathe?
+8. Do you have Pain or tenderness around the gums ?
+9. Is there severe pain for several days after tooth extraction
+10. Is there bones seen in dental socket?
+11. Does your teeth feel painful and sensitive?
+12. Is your tooth eroded?
+13. Do you have headache?
+14. Do you have insomnia?
+15. Is there the sound of teeth crunching during sleep?
+16.Does your gums bleed easily?
+17. Is the shape of your gum round?
+18. Does your gums feel soft?
+19.Are your teeth or gum suppurating?
+20. Do you have tooth aches?
+21. Do you have redness on the corners of the mouth?
+22. Is the corner of your mouth feeling painful?
+23. Do you have scaly mouth corners?
+24. Do you have ulcer?
+25. Can your dentin be seen?
+26. Do you have cavities?
+27. Do you have infected pulp?
+28. Is there any pain without stimulation?
+29. Do you have white spots on your teeth?
+30. Do you have white patches on your tongue?
+31. Do you have white patches on your oral cavity?
+32. Do you have plaque deposits?
+33. Do you have Tartar?
+34.Do you have tooth decay?
+35. Is your pulp is numb?
+36. Is your pulp chamber is open?
+37. Is your gums red?
+
+IF(G2 AND G1 AND G3){
+	return P1
+}
