@@ -12,5 +12,5 @@ Knowledge Based System final project using rule-based forward chaining method to
 
 - Download this repository as zip file
 - Extract the zip file into your "/xampp/htdocs folder" (if you're using XAMPP)
-- Open phpMyAdmin, and create a new database named "kbs"
+- Open phpMyAdmin, and create a new database name it as "kbs"
 - Import "kbs.sql" in that "kbs" database.
